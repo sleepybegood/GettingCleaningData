@@ -29,6 +29,7 @@ In the fifth step, by data.table package, the means of each variable subject and
 
 
 
+## Data
 
-
+Data was extracted from [this zip link](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), and for a more detail you could visit [the web](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones )
 

@@ -14,30 +14,14 @@
 if("data.table" %in% rownames(installed.packages()) == FALSE) {
   install.packages("data.table")}
 
-if("downloader" %in% rownames(installed.packages()) == FALSE) {
-  install.packages("downloader")}
-
 library(data.table)
-library(downloader)
 
 
-## the firs we have to do is read the data from the web
+## change working directory 
 
-urlData<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip" 
-
-## create a temporal directory
-
-tdir <- tempdir()
-
-## change working directory from the temporal directory
-
-setwd(tdir)
+setwd("C:/Getting and cleaning data")
 
 
-## download the data and unzip in the temporal directory
-
-download(urlData, dest="dataset.zip", mode="wb") 
-unzip("dataset.zip")
 
 
 ## Read the data
@@ -45,13 +29,19 @@ unzip("dataset.zip")
 ## Y are activities
 ## Subj are the subjects
 
-
+## train data
 trainSubj<-read.table("./UCI HAR Dataset/train/subject_train.txt",header=FALSE)
 trainY<-read.table("./UCI HAR Dataset/train/y_train.txt",header=FALSE)
 trainX<-read.table("./UCI HAR Dataset/train/X_train.txt",header=FALSE)
+
+
+## test data
 testSubj<-read.table("./UCI HAR Dataset/test/subject_test.txt",header=FALSE)
 testY<-read.table("./UCI HAR Dataset/test/y_test.txt",header=FALSE)
 testX<-read.table("./UCI HAR Dataset/test/X_test.txt",header=FALSE)
+
+
+## names of the X columns and the activities
 features<-read.table("./UCI HAR Dataset/features.txt",header=FALSE)
 activityLabels<-read.table("./UCI HAR Dataset/activity_labels.txt",header=FALSE)
 

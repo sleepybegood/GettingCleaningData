@@ -62,5 +62,39 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 The complete list of variables of each feature vector is available in 'features.txt'
 
 
+## Tidy Data
+
+The variables kept in the tidy data **(tidyData.txt)** are the grouped mean for activity and subject for the estimated signals:
+
+* mean(): Mean value
+* std(): Standard deviation
+
+the names of the columns are
+
+*"activityName",            "subj",                     "tBodyAccMeanX",           
+"tBodyAccMeanY",            "tBodyAccMeanZ",            "tGravityAccMeanX",        
+"tGravityAccMeanY",         "tGravityAccMeanZ",         "tBodyAccJerkMeanX",       
+"tBodyAccJerkMeanY",        "tBodyAccJerkMeanZ",        "tBodyGyroMeanX",          
+"tBodyGyroMeanY",           "tBodyGyroMeanZ",           "tBodyGyroJerkMeanX",      
+"tBodyGyroJerkMeanY",       "tBodyGyroJerkMeanZ",       "tBodyAccMagMean",         
+"tGravityAccMagMean",       "tBodyAccJerkMagMean",      "tBodyGyroMagMean",        
+"tBodyGyroJerkMagMean",     "fBodyAccMeanX",            "fBodyAccMeanY",           
+"fBodyAccMeanZ",            "fBodyAccJerkMeanX",        "fBodyAccJerkMeanY",       
+"fBodyAccJerkMeanZ",        "fBodyGyroMeanX",           "fBodyGyroMeanY",          
+"fBodyGyroMeanZ",           "fBodyAccMagMean",        "fBodyBodyAccJerkMagMean",  
+"fBodyBodyGyroMagMean",     "fBodyBodyGyroJerkMagMean", "tBodyAccStdX",            
+"tBodyAccStdY",             "tBodyAccStdZ",             "tGravityAccStdX",         
+"tGravityAccStdY",          "tGravityAccStdZ",          "tBodyAccJerkStdX",        
+"tBodyAccJerkStdY",         "tBodyAccJerkStdZ",         "tBodyGyroStdX",           
+"tBodyGyroStdY",            "tBodyGyroStdZ",            "tBodyGyroJerkStdX",       
+"tBodyGyroJerkStdY",        "tBodyGyroJerkStdZ",        "tBodyAccMagStd",          
+"tGravityAccMagStd",        "tBodyAccJerkMagStd",       "tBodyGyroMagStd",         
+"tBodyGyroJerkMagStd",      "fBodyAccStdX",             "fBodyAccStdY",            
+"fBodyAccStdZ",             "fBodyAccJerkStdX",         "fBodyAccJerkStdY",        
+"fBodyAccJerkStdZ",         "fBodyGyroStdX",            "fBodyGyroStdY",           
+"fBodyGyroStdZ",            "fBodyAccMagStd",          "fBodyBodyAccJerkMagStd",  
+"fBodyBodyGyroMagStd",      "fBodyBodyGyroJerkMagStd"*
+
+
 
 
